@@ -4,10 +4,12 @@ public class VariablePractice {
 
     public static void main(String[] args) {
 
-        byte byteValue = 65;
-        char c = (char)byteValue;
+        char charValue1 = 'A';
+        char charValue2  = 1;
 
-        System.out.println(c);
+        int intValue = charValue1 + charValue2;
+        char charValue = (char)intValue;
+        System.out.println(charValue);
 
     }
 }
