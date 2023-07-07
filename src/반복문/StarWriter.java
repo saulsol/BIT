@@ -111,18 +111,47 @@ public class StarWriter {
 
     private static void printBowTie() {
 
-        for(int i=1, n=1; i<=10; i++) {
-            for(int j=1; j<=10; j++) {
-                System.out.print(((j >=n+1) && (j <=10-n))? " " : "*");
+        int size = 5; // 나비 모양의 크기 (변의 길이)
+
+        // 윗부분 그리기
+        for (int i = 1; i <= size; i++) {
+            // '*' 출력
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
-            if(i < 5) {
-                n++;
-            } else {
-                n--;
+
+            // 공백 출력
+            for (int j = 1; j <= 2 * (size - i); j++) {
+                System.out.print(" ");
             }
-            System.out.println();
+
+            // '*' 출력
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println(); // 줄 바꿈
         }
 
+        // 아랫부분 그리기
+        for (int i = size; i >= 1; i--) {
+            // '*' 출력
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            // 공백 출력
+            for (int j = 1; j <= 2 * (size - i); j++) {
+                System.out.print(" ");
+            }
+
+            // '*' 출력
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println(); // 줄 바꿈
+        }
     }
 
         public static void main (String[]args) throws IOException {
