@@ -32,7 +32,7 @@ public class Student {
         String stringAge = String.valueOf(values[0].charAt(0)) + String.valueOf(values[0].charAt(1));
         System.out.println("-----------"+stringAge);
         String stringOld = "";
-        if(Integer.parseInt(stringAge) <= 0){
+        if(String.valueOf(values[0].charAt(0)).equals("0")){
             stringOld = "20" + stringAge;
         }else {
             stringOld = "19" + stringAge;
