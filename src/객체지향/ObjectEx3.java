@@ -8,15 +8,15 @@ public class ObjectEx3 {
                         "송재근#990910-1010345#031)245-1234"
 
         };
-        Student [] students = new Student[str.length];
+        BookDriver.Student[] students = new BookDriver.Student[str.length];
 
         for(int i=0; i<str.length; i++){
-            Student student = new Student();
+            BookDriver.Student student = new BookDriver.Student();
             student.setValue(str[i]);
             students[i] = student;
         }
 
-        for (Student student : students) {
+        for (BookDriver.Student student : students) {
             System.out.println(student);
         }
 
