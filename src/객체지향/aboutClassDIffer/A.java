@@ -9,6 +9,10 @@ public class A { //외부
 
     }
 
+    class InnerClass{
+
+
+    }
     public static class V{ // 내부
          static int vv;  // V class에 static이 붙어서 사용 가능
 
