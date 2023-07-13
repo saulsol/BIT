@@ -14,13 +14,25 @@ public class ObjectEx4 { // 속성 (data)
         this.instanceValue = instanceValue;
     }
 
+    public static int getStaticValue(){
+        return staticValue;
+    }
+
+    public static void setStaticValue(int staticValue){
+        ObjectEx4.staticValue = staticValue;
+    }
+
     public static void main(String[] args) {
 
         staticValue = 9; // 같은 스태틱이라서 가능
 
-        ObjectEx4 objectEx4 = new ObjectEx4();
+        ObjectEx4 objectEx4_1 = new ObjectEx4();
+        ObjectEx4 objectEx4_2 = new ObjectEx4();
 
+        objectEx4_1.setStaticValue(99);
+        objectEx4_2.setStaticValue(1001);
 
+        System.out.println(staticValue);
 
     }
 
