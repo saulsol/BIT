@@ -18,13 +18,20 @@ public class SuperMain {
 //        Child2 child2 = new Child2();
 
 
-        Super s = new Child1();
+        Super s = new Child1(10);
 
         SuperMain superMain = new SuperMain();
         superMain.actionLang("안");
 
         System.out.println("------------------------------------");
-        Child1 child1 = new Child1();
+        Child1 child1 = new Child1(10);
+
+
+        System.out.println("----------------------------------------------");
+        System.out.println(child1);
+
+
+
 
     }
 }
