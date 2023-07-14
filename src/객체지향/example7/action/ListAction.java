@@ -1,4 +1,7 @@
-package 객체지향.example7;
+package 객체지향.example7.action;
+
+import 객체지향.example7.ActionForward;
+import 객체지향.example7.action.Action;
 
 public class ListAction implements Action {
 
@@ -13,6 +16,9 @@ public class ListAction implements Action {
 
     @Override
     public ActionForward execute() {
-        return null;
+        // execute
+        System.out.println("ListAction execute");
+
+        return new ActionForward(path, redirect);
     }
 }
