@@ -23,7 +23,7 @@ public class Book {
 
     public Book bookMethod(String title){
         Book book = new Book(title);
-        return this;
+        return this; // 내부에 선언된 객체가 아닌 해당 메서드를 콜한 객체 본인 자신
     }
 
     // this 는 항상 객체 본인 자신을 가리킴
