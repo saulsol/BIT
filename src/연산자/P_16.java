@@ -15,17 +15,15 @@ public class P_16 {
         System.out.println(i);
 
         float f = 10 / 3;
-        System.out.println(f);
+        System.out.println(f); // 3.0 으로 저장
 
-        float f2 = 10f / 3F;
+        float f2 = 10f / 3F; // 3.333333... 으로 저장
         System.out.println(f2);
 
         double d = 10d / 3D;
         System.out.println(d);
 
         System.out.println((10 / 3) * 3);
-
-
 
 
     }

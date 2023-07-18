@@ -8,8 +8,7 @@ public class P_11 {
         int i2 = i1 + 1;
 
         System.out.println(i2);
-
-
+        // 오버플로우가 나온다.
     }
 
 }

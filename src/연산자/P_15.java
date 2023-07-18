@@ -8,7 +8,7 @@ public class P_15 {
         int i2 = i1 + 1;
         System.out.println(i2);
 
-        long l1 = i1+1;
+        long l1 = i1+1; // 이미 오버플로우가 터진 상테로 long 값으로 저장
         System.out.println(l1);
 
         long l2 = (long) (i1 + 1);
