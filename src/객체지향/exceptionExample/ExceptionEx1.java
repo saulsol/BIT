@@ -1,5 +1,7 @@
 package 객체지향.exceptionExample;
 
+import 객체지향.ObjectEx;
+
 public class ExceptionEx1 {
 
     public void ArrayIndexOutOfBoundsException(){
@@ -40,6 +42,16 @@ public class ExceptionEx1 {
         String s = (String)new Object();
     }
 
+    public Object getData(int data){
+        if(data>=0 && data<=10){
+            return 99.0;
+        }else if(data>= 11 && data<=20){
+            return "hello";
+        }
+        return null;
+    }
+
+    // 미지정인 상태로 무엇인가를 만드는 작업
     public void nullPointerException(){ // 참조하고 있지 않는 참조변수를 사용할 때
         String [] sArray = new String[5];
         for (String s : sArray) {
@@ -48,8 +60,21 @@ public class ExceptionEx1 {
     }
 
 
-    public void stringIndexOutOfBoundsException(){
+    public void nullPointerException2(){
+        Object o = getData(21);
+        if(o instanceof  Double){
+            System.out.println(((Double)o).doubleValue());
+        } else if (o instanceof String) {
+            System.out.println(((String)o).charAt(0));
+        }
+        System.out.println(o.toString());
+    }
 
+
+
+
+    public void stringIndexOutOfBoundsException(String data){
+        System.out.println(data.charAt(-1));
     }
 
 
@@ -64,7 +89,7 @@ public class ExceptionEx1 {
 //        exceptionEx1.numberFormatException("[MSG]안녕하세요");
 
 
-        exceptionEx1.nullPointerException();
+        exceptionEx1.nullPointerException2();
 
 
 
