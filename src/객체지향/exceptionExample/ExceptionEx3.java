@@ -19,7 +19,6 @@ public class ExceptionEx3 {
     public void exceptionEx3() {
         File file = new File("c:\\Spring");
 
-
         FileInputStream fis = null;
         try{
             fis = new FileInputStream(file);
@@ -48,8 +47,6 @@ public class ExceptionEx3 {
     public void exceptionEx4() {
         File file = new File("c:\\Spring");
 
-
-
         try(FileInputStream fis = new FileInputStream(file)){
 
             int temp = 0;
@@ -68,6 +65,22 @@ public class ExceptionEx3 {
         }
     }
 
+    public void exception5(){
+        try{
+            int rs = 10/0;
+            int [] m = new int[5];
+            m[5] = 10;
+            String s = null;
+            s.charAt(0);
+
+            String s1 = (String) new Object();
+
+        }catch (ArithmeticException | ArrayIndexOutOfBoundsException
+                | NullPointerException exception){
+
+
+        }
+    }
 
 
 
