@@ -1,17 +1,20 @@
 package 객체지향.innerExample2;
 
 public class Main {
+
+    class InnerClass{}
+
+    static class InnerStaticClass{}
+
     public static void main(String[] args) {
 
-        PocketBall.PocketMonster pocketMonster = new PocketBall.PocketMonster();
-        System.out.println(pocketMonster.level);
-        System.out.println(PocketBall.PocketMonster.name);
+        Main.InnerStaticClass mi1 = new Main.InnerStaticClass();
+        Main.InnerStaticClass mi2 = new Main.InnerStaticClass();
 
-        // 스태틱 내부 클래스의 인스턴스는 외부 클래르를 먼저 생성하지 않아도 된다.
-
-        // 클래스.정적내부클래스.정적메소드()
-        PocketBall.PocketMonster.getPocketMember();
-
-
+        if(mi1 == mi2) {
+            System.out.println("내부 스태틱 클래스는 새로만들어도 같은 참조지");
+        }else{
+            System.out.println("내부 스태틱 클래스도 클래스니까 다른 참조지");
+        }
     }
 }
