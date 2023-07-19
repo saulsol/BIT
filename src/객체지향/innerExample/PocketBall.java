@@ -24,7 +24,6 @@ public class PocketBall {
             // 내부 클래스 멤버
             System.out.println(name);
             System.out.println(level);
-
         }
 
 

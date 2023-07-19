@@ -9,5 +9,4 @@ public class Outer {
         class localInner{} // 지역 클래스
     }
 
-
 }
