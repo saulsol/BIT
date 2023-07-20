@@ -7,6 +7,7 @@ public class P_63 {
         String org = "123456789";
 
         char [] nums = org.toCharArray();
+
         int sum = 0;
 
         for(int i=0; i<nums.length; i++){
