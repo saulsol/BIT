@@ -6,7 +6,18 @@ package 만들기;
 
 import java.util.Arrays;
 
-public class MyQueue {
+public class MyQueue  {
+
+    int add(int a, int b){
+       return a + b;
+    }
+
+
+
+
+
+
+
 
     private int size;
     private int rear = -1;
