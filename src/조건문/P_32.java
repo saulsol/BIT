@@ -8,7 +8,7 @@ public class P_32 {
         String status = null;
 
 
-        status = age>19?"충분히 성장했다. ":"아직 어리다";
+        status = (age>19)?"충분히 성장했다. ":"아직 어리다";
 
         System.out.println(status);
 
