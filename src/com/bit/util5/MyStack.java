@@ -13,7 +13,7 @@ public Object push(Object item) {
 		Object obj = peek();	 // Stack에 저장된 마지막 요소를 읽어온다.
 		//   만일 Stack이 비어있으면 peek()메서드가 EmptyStackException을 발생시킨다.
         //   마지막 요소를 삭제한다. 배열의 index가 0 부터 시작하므로 1을 빼준다.
-		removeElementAt(size() - 1); 
+		removeElementAt(size() - 1); //4,3,2,1... 이런 순서로 삭제가 된다.
 
 		return obj;
     }
