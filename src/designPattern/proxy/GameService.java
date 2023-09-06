@@ -1,4 +1,4 @@
-package designPattern.proxy.two;
+package designPattern.proxy;
 
 public interface GameService {
 
